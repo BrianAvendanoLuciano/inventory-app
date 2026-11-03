@@ -1,0 +1,30 @@
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  body {
+    font-family: monospace;
+  }
+
+  .print-area,
+  .print-area * {
+    visibility: visible;
+  }
+
+  .print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
